@@ -1,7 +1,6 @@
 ﻿#include "pch.h"
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <gtest/gtest.h>
 #include <cstring>
 #include <cstdint>
 #include "../Строки С/string_func.cpp"
