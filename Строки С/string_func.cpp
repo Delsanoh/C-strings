@@ -137,7 +137,6 @@ void sortDigitWords(char words[][MAX_LENGTH], bool isDigitWordFlags[],
             int32_t sum2 = sumOfDigits(words[idx2]);
 
             if (sum1 < sum2) {
-                // Меняем местами индексы
                 std::swap(digitIndices[j], digitIndices[j + 1]);
             }
         }
@@ -169,7 +168,6 @@ void sortDigitWords(char words[][MAX_LENGTH], bool isDigitWordFlags[],
             sortedDigitIdx++;
         }
         else {
-            // Не цифровое слово - оставляем как есть
             std::strcpy(words[i], tempWords[i]);
             std::strcpy(delimitersBefore[i], tempDelimitersBefore[i]);
             std::strcpy(delimitersAfter[i], tempDelimitersAfter[i]);
